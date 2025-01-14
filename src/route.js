@@ -1,9 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import HomePage from './components/HomePage.vue';
-import ProblemList from './components/ProblemList.vue';
-import UploadProblem from './components/UploadProblem.vue';
+import ProblemList from './components/problems/ProblemList.vue';
+import UploadProblem from './components/problems/UploadProblem.vue';
 import MathProblems from './components/problems/MathProblems.vue';
+import EditProblem from './components/problems/EditProblem.vue';
 
 const routes = createRouter({
   history: createWebHashHistory(),
@@ -12,6 +13,7 @@ const routes = createRouter({
     { path: "/list", component: ProblemList},
     { path: "/upload", component: UploadProblem},
     { path: "/mathproblems", component: MathProblems},
+    { path: "/edit", component: EditProblem}
 
     
   ],
