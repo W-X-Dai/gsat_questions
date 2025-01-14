@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 * {box-sizing: border-box;}
 
 input[type=text], select, textarea {
