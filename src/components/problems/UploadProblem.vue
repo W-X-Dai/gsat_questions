@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import { db } from "@/firebase.js";
+import { db } from "@/config/firebaseConfig.js";
 import { collection, addDoc } from "firebase/firestore"; 
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';

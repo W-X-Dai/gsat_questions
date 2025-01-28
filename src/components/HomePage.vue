@@ -33,14 +33,34 @@
 </template>
 
 <script>
-	export default{
-		data() {
-			return {
-				ShowOldUpdates: false,
-				ShowNewUpdates: false,
-			}
-		},
-	}
+import { getAuth, signOut } from 'firebase/auth'
+import { useRouter } from 'vue-router'
+
+export default {
+  setup() {
+    const router = useRouter()
+    const auth = getAuth()
+
+    const handleLogout = async () => {
+      try {
+        await signOut(auth)
+        router.push('/login')
+      } catch (error) {
+        console.error('Logout error:', error)
+      }
+    }
+
+    return {
+      handleLogout
+    }
+  },
+  data() {
+    return {
+      ShowOldUpdates: false,
+      ShowNewUpdates: false,
+    }
+  }
+}
 </script>
 
 <style >

@@ -24,7 +24,10 @@
             <b-dropdown-item href="#">物理</b-dropdown-item>
             <b-dropdown-item href="#">化學</b-dropdown-item>
             <b-dropdown-item href="#">生物</b-dropdown-item>
-  
+            
+            <b-dropdown-item><router-link to="/login">Login</router-link></b-dropdown-item>
+            <b-dropdown-item><router-link to="/register">Register</router-link></b-dropdown-item>
+            <b-dropdown-item><router-link to="/logout">Logout</router-link></b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
   
