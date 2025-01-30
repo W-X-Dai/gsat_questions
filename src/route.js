@@ -9,6 +9,7 @@ import Logout from "./components/Auth/logout.vue";
 import Login from "./components/Auth/login.vue";
 import Register from "./components/Auth/register.vue";
 import ForgotPassword from './components/Auth/forgotPassword.vue';
+import Profile from './components/profile.vue';
 
 const routes = createRouter({
   history: createWebHashHistory(),
@@ -22,6 +23,7 @@ const routes = createRouter({
     { path: '/register', component: Register },
     { path: '/forgotPassword', component: ForgotPassword },
     { path: '/logout', component: Logout },
+    { path: '/profile/:userId', component: Profile },
     /* { path: '/auth/admin', component: Admin } */
   ],
 });
