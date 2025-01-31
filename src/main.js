@@ -9,6 +9,8 @@ import routes from './route.js';
 // v-md-editor
 import VMdEditor from './vmeditor'
 
+// Firebase
+import './config/firebaseConfig.js'
 import { createApp } from 'vue';
 import App from './App.vue';
 

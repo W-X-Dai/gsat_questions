@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { db } from '@/firebase'
+import { db } from '@/config/firebaseConfig.js'
 import { collection, getDocs } from "firebase/firestore";
 
 export default {

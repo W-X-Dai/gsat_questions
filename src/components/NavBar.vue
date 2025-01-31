@@ -34,16 +34,18 @@
             <b-dropdown-item href="#">物理</b-dropdown-item>
             <b-dropdown-item href="#">化學</b-dropdown-item>
             <b-dropdown-item href="#">生物</b-dropdown-item>
+  
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
+  
           <b-nav-item-dropdown right>
             <template #button-content>
               <em>User</em>
             </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
+            <b-dropdown-item href="#"><button @click="goToProfile">👤 Profile</button></b-dropdown-item>
             <b-dropdown-item href="#">我的課程</b-dropdown-item>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>
@@ -52,9 +54,11 @@
     </b-navbar>
   </div>
 </template>
-
+  
 <script>
-export default {};
+  export default {
+  
+  }
 </script>
 
 <style>
